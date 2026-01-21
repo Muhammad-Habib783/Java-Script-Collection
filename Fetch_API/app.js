@@ -15,15 +15,15 @@ const getFacts = async() =>
 
 // by using promise chaining method in this we use .then() method
 
-// function getFacts()
-// {
-//     fetch(URL).then((response)=>
-//     {
-//         return response.json();
-//     }).then((data)=>
-//     {
-//         console.log(data);
-//         factPara.innerText = data.fact;
-//     });
-// }
+function getFacts()
+{
+    fetch(URL).then((response)=>
+    {
+        return response.json();
+    }).then((data)=>
+    {
+        console.log(data);
+        factPara.innerText = data.fact;
+    });
+}
 btn.addEventListener("click", getFacts);
